@@ -23,7 +23,6 @@
         "protractor-multiple-cucumber-html-reporter-plugin": "~1.8.0",
         "ts-node": "~8.0.3",
         "typescript": "~3.4.5",
-        "lighthouse": "~4.3.0",
-        "xmlhttprequest": "~1.8.0"
+        "lighthouse": "~4.3.0"
     }
 }

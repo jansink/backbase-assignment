@@ -7,7 +7,7 @@ Feature: The computer database homepage
     Given a user navigates to the computer database homepage
     Then the computer database homepage is displayed
 
-  Scenario: The Add a computer screen can be used
+  Scenario: The Add a computer screen can be used from the homepage
     Given a user navigates to the computer database homepage
     When a user navigate to the add a computer screen
     Then the add a computer screen is displayed

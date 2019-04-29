@@ -10,8 +10,6 @@ chai.use(chaiSmoothie)
     .use(chaiString);
 const expect = chai.expect;
 const homepage = new Homepage();
-const contentpage = new Contentpage();
-const searchResultspage = new SearchResultspage();
 
 setDefaultTimeout(60 * 1000);
 
