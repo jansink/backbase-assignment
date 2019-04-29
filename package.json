@@ -6,22 +6,22 @@
         "test:e2e": "empty-dir reports/e2e && webdriver-manager update --ignore_ssl --gecko false && tsc && protractor e2e/protractor.conf.js"
     },
     "devDependencies": {
-        "@types/chai":"~4.1.7",
-        "@types/chai-string":"~1.4.1",
-        "@types/cucumber":"~4.0.5",
-        "@types/node":"~11.12.0", 
-        "chai":"~4.2.0",
-        "chai-smoothie":"~0.3.2",
-        "chai-string":"~1.5.0",
-        "chai-url":"~1.0.4",
-        "chromedriver":"~2.46.0",
-        "cucumber":"~5.1.0",
+        "@types/chai": "~4.1.7",
+        "@types/chai-string": "~1.4.1",
+        "@types/cucumber": "~4.0.5",
+        "@types/node": "~11.12.0",
+        "chai": "~4.2.0",
+        "chai-smoothie": "~0.3.2",
+        "chai-string": "~1.5.0",
+        "chai-url": "~1.0.4",
+        "chromedriver": "~2.46.0",
+        "cucumber": "~5.1.0",
         "empty-dir-cli": "~1.0.0",
-        "protractor":"~5.4.2",
-        "protractor-cucumber-framework":"~6.1.1",
-        "protractor-multiple-cucumber-html-reporter-plugin":"~1.8.0",
-        "ts-node":"~8.0.3",
-        "typescript":"~3.4.5",
-        "xmlhttprequest":"~1.8.0"
+        "protractor": "~5.4.2",
+        "protractor-cucumber-framework": "~6.1.1",
+        "protractor-multiple-cucumber-html-reporter-plugin": "~1.8.0",
+        "ts-node": "~8.0.3",
+        "typescript": "~3.4.5",
+        "xmlhttprequest": "~1.8.0"
     }
 }
