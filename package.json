@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "private": true,
     "scripts": {
-        "test:e2e": "empty-dir reports/e2e && webdriver-manager update --ignore_ssl --gecko false && tsc && protractor e2e/protractor.conf.js"
+        "test:e2e": "empty-dir reports/e2e && webdriver-manager update --ignore_ssl --gecko false && tsc && protractor e2e/protractor.conf.js",
+        "test:performance": "lighthouse http://computer-database.herokuapp.com/computers"
     },
     "devDependencies": {
         "@types/chai": "~4.1.7",
@@ -22,6 +23,7 @@
         "protractor-multiple-cucumber-html-reporter-plugin": "~1.8.0",
         "ts-node": "~8.0.3",
         "typescript": "~3.4.5",
+        "lighthouse": "~4.3.0",
         "xmlhttprequest": "~1.8.0"
     }
 }
