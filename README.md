@@ -11,6 +11,9 @@ De testen worden headless en in direct mode uitgevoerd op Google Chrome browser 
 
 To run the regression tests Node.js is required https://nodejs.org/en/. 
 
+The application under test is: [Sample Computer Database](http://computer-database.herokuapp.com/computers)
+This application needs to be served bij Heroku in order for the tests to run.
+
 ### Setup
 Run the following commands from the project root:
 ```bash
