@@ -1,0 +1,5 @@
+[
+    "http://computer-database.herokuapp.com/computers",
+    "http://computer-database.herokuapp.com/computers/new",
+    "http://computer-database.herokuapp.com/computers/112"
+  ]

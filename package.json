@@ -5,7 +5,8 @@
     "scripts": {
         "test:e2e": "empty-dir reports/e2e && tsc && protractor e2e/protractor.conf.js",
         "test:lighthouse": "lighthouse http://computer-database.herokuapp.com/computers",
-        "test:artillery": "artillery quick --count 10 -n 20 http://computer-database.herokuapp.com/computers"
+        "test:artillery": "artillery quick --count 10 -n 20 http://computer-database.herokuapp.com/computers",
+        "test:check-html": "site-validator check-html.json --verbose"
     },
     "devDependencies": {
         "@types/chai": "~4.1.7",
@@ -25,6 +26,7 @@
         "ts-node": "~8.0.3",
         "typescript": "~3.4.5",
         "lighthouse": "~4.3.0",
-        "artillery": "~1.6.0-28"
+        "artillery": "~1.6.0-28",
+        "site-validator-cli": "~1.0.1"
     }
 }
