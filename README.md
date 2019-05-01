@@ -41,7 +41,13 @@ To get some non-functional feedback, run Google lighthouse.
 npm run test:lighthouse
 ```
 ### Run load tests
-To run an ad-hoc load test run artillery
+To run an ad-hoc load test run artillery.
 ```bash
 npm run test:artillery
+```
+
+### Run HTML validator
+To run a w3c HTML validator against the computer database site.
+```bash
+npm run test:validate-html
 ```
