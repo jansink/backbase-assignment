@@ -7,8 +7,6 @@ Toolkit used:
 * Non-Functional testing: [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 * Ad-hoc load testing: [Artillery](https://artillery.io/)
 
-De testen worden headless en in direct mode uitgevoerd op Google Chrome browser op de lokale machine. 
-
 ### Prerequisites
 
 * To run the regression tests Node.js is required https://nodejs.org/en/. 
@@ -22,7 +20,8 @@ Run the following commands from the project root:
 npm i
 ```
 ### Run regression tests
-To run the e2e regression tests:
+The e2e tests are run headless in Google Chrome.
+To run these e2e regression tests:
 ```bash
 npm run test:e2e
 ```
