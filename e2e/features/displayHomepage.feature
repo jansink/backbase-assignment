@@ -1,6 +1,6 @@
 # language: en
 @e2e @regression
-Feature: The computer database homepage
+Feature: Display the computer database homepage
   As the computer company we want the computer homepage to function correctly
 
   Background: The computer database homepage is loaded

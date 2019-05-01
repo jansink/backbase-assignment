@@ -103,6 +103,7 @@ exports.config = {
             automaticallyGenerateReport: true,
             removeExistingJsonReportFile: false,
             removeOriginalJsonReportFile: false,
+            saveCollectedJSON :true,
             reportPath: "./reports/e2e/",
             reportName: "Backbase Assignment - Computer Database Feature Dashboard",
             // pageFooter: "<div><p>${BUILD_NUMBER}</p></div>"
