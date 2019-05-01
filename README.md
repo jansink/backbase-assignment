@@ -20,7 +20,12 @@ Run the following commands from the project root:
 npm i
 ```
 ### Run regression tests
-The e2e tests are run headless in Google Chrome.
+The e2e tests are run headless in Google Chrome (using Chrome Mobile Simulation for the mobile devices).
+* Desktop
+* Nexus 7
+* iPhone 4
+* iPad
+
 To run these e2e regression tests:
 ```bash
 npm run test:e2e

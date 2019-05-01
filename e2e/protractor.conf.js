@@ -5,22 +5,85 @@ exports.config = {
     directConnect: true,
     SELENIUM_PROMISE_MANAGER: false,
     baseUrl: baseUrl,
-    capabilities: {
-        browserName: 'chrome',
-        chromeOptions: {
-            args: ['--headless', '--disable-gpu', '--disable-popup-blocking', '--window-size=1280x1024', '--no-sandbox', '--auto-ssl-client-auth']
-        },
-        metadata: {
-            browser: {
-                name: 'chrome',
+    maxSessions: 1,
+    multiCapabilities: [
+        {
+            browserName: 'chrome',
+            chromeOptions: {
+                args: ['--headless', '--disable-gpu', '--disable-popup-blocking', '--window-size=1360x768', '--no-sandbox', '--auto-ssl-client-auth']
             },
-            device: 'Desktop',
-            platform: {
-                name: 'Windows',
-                version: process.platform
-            }
+            metadata: {
+                browser: {
+                    name: 'chrome',
+                    // version: '58'
+                },
+                device: 'Desktop',
+                platform: {
+                    name: 'Windows',
+                    version: process.platform
+                }
+            },
         },
-    },
+        {
+            browserName: 'chrome',
+            chromeOptions: {
+                args: ['--headless', '--disable-gpu', '--disable-popup-blocking', '--no-sandbox', '--auto-ssl-client-auth'],
+                mobileEmulation: {
+                    'deviceName': 'Nexus 7'
+                },
+            },
+            metadata: {
+                browser: {
+                    name: 'chrome',
+                    // version: '58'
+                },
+                device: 'Mobile (Nexus 7)',
+                platform: {
+                    name: 'Android',
+                    version: process.platform
+                }
+            },
+        },
+        {browserName: 'chrome',
+            chromeOptions: {
+                args: ['--headless', '--disable-gpu', '--disable-popup-blocking', '--no-sandbox', '--auto-ssl-client-auth'],
+                mobileEmulation: {
+                    'deviceName': 'iPhone 4'
+                },
+            },
+            metadata: {
+                browser: {
+                    name: 'chrome',
+                    // version: '58'
+                },
+                device: 'Mobile-small (iPhone 4)',
+                platform: {
+                    name: 'iOS',
+                    version: process.platform
+                }
+            },
+        },
+        {
+            browserName: 'chrome',
+            chromeOptions: {
+                args: ['--headless', '--disable-gpu', '--disable-popup-blocking', '--no-sandbox', '--auto-ssl-client-auth'],
+                mobileEmulation: {
+                    'deviceName': 'iPad'
+                },
+            },
+            metadata: {
+                browser: {
+                    name: 'chrome',
+                    // version: '58'
+                },
+                device: 'Tablet (iPad)',
+                platform: {
+                    name: 'iOS',
+                    version: process.platform
+                }
+            },
+        },
+    ],
     onPrepare: () => {
         browser.waitForAngularEnabled(false);
     },
