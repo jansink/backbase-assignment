@@ -23,4 +23,6 @@ npm run test:e2e
 ```
 ### Reports
 The reports of the regression tests can be found in de reports directory.
+```bash
 /reports/e2e/index.html
+```
