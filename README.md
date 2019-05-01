@@ -4,7 +4,6 @@ Toolkit used:
 * Driver: [Protractor](http://www.protractortest.org)
 * BDD: [Cucumberjs](https://cucumber.io) ([GitHub](https://github.com/cucumber/cucumber-js))
 * Assertions: [Chai](http://chaijs.com)
-* Layout testing: [Galen Framework](http://galenframework.com)  
 
 De testen worden headless en in direct mode uitgevoerd op Google Chrome browser op de locale machine. 
 
@@ -22,11 +21,6 @@ To run the e2e regression tests:
 ```bash
 npm run test:e2e
 ```
-To run the layout e2e regression tests:
-```bash
-npm run test:layout
-```
 ### Reports
 The reports of the regression tests can be found in de reports directory.
-/reports/e2e
-/reports/layout
+/reports/e2e/index.html
