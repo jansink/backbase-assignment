@@ -26,17 +26,17 @@ To run the e2e regression tests:
 ```bash
 npm run test:e2e
 ```
-### Regression tests report
+
 The reports of the regression tests can be found in de reports directory.
 ```bash
 /reports/e2e/index.html
 ```
-### Run lighthouse test
+### Run non-functional tests
 To get some non-functional feedback, run Google lighthouse.
 ```bash
 npm run test:lighthouse
 ```
-### Run lighthouse test
+### Run load tests
 To run an ad-hoc load test run artillery
 ```bash
 npm run test:artillery
