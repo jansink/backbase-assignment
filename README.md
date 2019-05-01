@@ -3,13 +3,13 @@
 Toolkit used:
 * Driver: [Protractor](http://www.protractortest.org)
 * BDD: [Cucumberjs](https://cucumber.io) ([GitHub](https://github.com/cucumber/cucumber-js))
-* Assertions: [Chai](http://chaijs.com)
+* Assertions: [Chai](http://chaijs.com) and [Chai Smoothie](https://www.npmjs.com/package/chai-smoothie)
 
-De testen worden headless en in direct mode uitgevoerd op Google Chrome browser op de locale machine. 
+De testen worden headless en in direct mode uitgevoerd op Google Chrome browser op de lokale machine. 
 
 ### Prerequisites
 
-To run the regression tests Node.js is required https://nodejs.org/en/. All the necessary npm packages, like protractor and cucumber, are in the package.json. 
+To run the regression tests Node.js is required https://nodejs.org/en/. 
 
 ### Setup
 Run the following commands from the project root:
