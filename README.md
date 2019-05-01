@@ -12,7 +12,7 @@ Toolkit used:
 * To run the regression tests Node.js is required https://nodejs.org/en/. 
 
 * The application under test is: [Sample Computer Database](http://computer-database.herokuapp.com/computers). 
-This application needs to be served bij Heroku in order for the tests to run.
+This application needs to be available in order for the tests to run. Sometimes the application is down (503 response).
 
 ### Setup
 Run the following commands from the project root:
