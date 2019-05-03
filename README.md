@@ -26,6 +26,10 @@ The e2e tests are run headless in Google Chrome (using Chrome Mobile Simulation 
 * iPhone 4
 * iPad
 
+___
+Known bugs are tagged by @bug, they are excluded from the regression test until the are fixed.
+___
+
 To run these e2e regression tests:
 ```bash
 npm run test:e2e
@@ -35,6 +39,7 @@ The reports of the regression tests can be found in de reports directory.
 ```bash
 /reports/e2e/index.html
 ```
+
 ### Run non-functional tests
 To get some non-functional feedback, run Google lighthouse.
 ```bash
@@ -50,4 +55,10 @@ npm run test:artillery
 To run a w3c HTML validator against the computer database site.
 ```bash
 npm run test:validate-html
+```
+
+## Manual test cases
+A PDF file with manual test cases can be found in the folder:
+```bash
+/manual/TestCases.pdf
 ```
