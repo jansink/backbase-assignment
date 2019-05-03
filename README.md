@@ -1,6 +1,6 @@
 # Backbase assignment QA Engineer
 
-Toolkit used:
+#### Toolkit used
 * Driver: [Protractor](http://www.protractortest.org)
 * BDD: [Cucumberjs](https://cucumber.io) ([GitHub](https://github.com/cucumber/cucumber-js))
 * Assertions: [Chai](http://chaijs.com) and [Chai Smoothie](https://www.npmjs.com/package/chai-smoothie)
@@ -26,9 +26,9 @@ The e2e tests are run headless in Google Chrome (using Chrome Mobile Simulation 
 * iPhone 4
 * iPad
 
----
+___
 Known bugs are tagged by @bug, they are excluded from the regression test until the are fixed.
----
+___
 
 To run these e2e regression tests:
 ```bash
@@ -58,7 +58,7 @@ npm run test:validate-html
 ```
 
 ## Manual test cases
-A PDF file with manual test cases can be found in the folder:
+A PDF file with manual test cases can be found here:
 ```bash
 /manual/TestCases.pdf
 ```
