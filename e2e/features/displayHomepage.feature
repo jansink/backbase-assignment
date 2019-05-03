@@ -25,7 +25,7 @@ Feature: Display the computer database homepage
       | TestFilterComputer |
 
 @bug
-  Scenario Outline: The displayed computers can be sorted
+  Scenario Outline: The displayed computers can be sorted by <tableColumn>
     Then the computer database homepage is displayed
     When table header <tableColumn> is clicked
     Then the sorting of <tableColumn> is descending
