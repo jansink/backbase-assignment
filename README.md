@@ -27,9 +27,10 @@ The e2e tests are run headless in Google Chrome (using Chrome Mobile Simulation 
 * iPad
 
 ___
-*Known bugs are tagged by @bug, they are excluded from the regression test until the are fixed.*
+##### Known errors:
+* the ordering of tables is broken, after clicking a table header to order that column the data is not ordered.
 
-*BUG: the ordering of tables is broken, after clicking a table header to order that column the data is not ordered.
+*Known errors are tagged by @bug, they are excluded from the regression test until the are fixed.*
 ___
 
 To run these e2e regression tests:
