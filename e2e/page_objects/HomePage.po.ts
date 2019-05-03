@@ -1,5 +1,4 @@
-import {$, by, element, ElementFinder} from 'protractor';
-import {TestVariables} from '../helpers/TestVariables';
+import {$, $$, by, element, ElementFinder, browser, ElementArrayFinder} from 'protractor';
 
 export class Homepage {
     body: ElementFinder;
@@ -17,6 +16,8 @@ export class Homepage {
     deletedComputer: ElementFinder;
     inputFilter: ElementFinder;
     displayedPage: ElementFinder;
+    tableComputerItems: ElementArrayFinder;
+    tableComputerItemsDesc: ElementArrayFinder;
 
     constructor() {
         this.body = $('div.l-body');
@@ -31,12 +32,21 @@ export class Homepage {
         this.messageComputerAdded = $('.alert-message.warning');
         this.messageComputerEdited = $('.alert-message.warning');
         this.firstComputerName = element.all(by.css('td a')).first();
-        this.deletedComputer = element(by.xpath(`//a[contains(text(),'${TestVariables.selectedComputer}')]`))
+        this.deletedComputer = element(by.xpath(`//a[contains(text(),'${browser.selectedComputer}')]`));
         this.inputFilter = element(by.id('searchbox'));
         this.displayedPage = $('.pagination .current a');
+        this.tableComputerItems = $$('table');
+        this.tableComputerItemsDesc = element.all(by.xpath(`//th[contains(@class, "headerSortDown")]/parent::tr/parent::thead/parent::table`));
     }
 
     filteredComputer(computername): ElementFinder {
         return element(by.xpath(`(//a[contains(@href, '${computername}')])[1]`));
     }
+
+    tableHeader(header): ElementFinder {
+        return element(by.xpath(`//a[contains(text(),'${header}')]`));
+    }
 }
+
+
+

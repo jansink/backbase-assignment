@@ -24,6 +24,18 @@ Feature: Display the computer database homepage
       | computername       |
       | TestFilterComputer |
 
+@bug
+  Scenario Outline: The displayed computers can be sorted
+    Then the computer database homepage is displayed
+    When table header <tableColumn> is clicked
+    Then the sorting of <tableColumn> is descending
+    Examples:
+      | tableColumn   |
+      | Computer name |
+      | Introduced    |
+      | Discontinued  |
+      | Company       |
+
   Scenario: The displayed computers can be scrolled
     Then the previous button is disabled
     When the next button is clicked

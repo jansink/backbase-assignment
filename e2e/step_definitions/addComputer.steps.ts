@@ -32,6 +32,10 @@ When(/^a discontinued date: ([^"]*) is filled in the form$/, async date => {
   await addcomputerpage.inputDiscontinuedDate.sendKeys(date);
 });
 
+When(/^a company: ([^"]*) is filled in the form$/, async company => {
+  await addcomputerpage.selectCompany(company).click();
+});
+
 Then(
   /^the ([^"]*) is ([^"]*) to the database$/,
   async (computername, added) => {

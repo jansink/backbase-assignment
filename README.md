@@ -65,3 +65,6 @@ A PDF file with manual test cases can be found here:
 ```bash
 /manual/TestCases.pdf
 ```
+
+## Todo
+* Make the e2e regression tests for the different device simulations run parralel. When I do this now, the reporting is broken.

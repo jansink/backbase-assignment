@@ -95,7 +95,7 @@ exports.config = {
         strict: true,
         format: 'json:reports/e2e/protractor-report.json',
         require: ['step_definitions/*.steps.ts'],
-        tags: ['@regression']
+        tags: ['@regression and (not @bug)']
     },
     plugins: [{
         package: "protractor-multiple-cucumber-html-reporter-plugin",
@@ -106,7 +106,6 @@ exports.config = {
             saveCollectedJSON :true,
             reportPath: "./reports/e2e/",
             reportName: "Backbase Assignment - Computer Database Feature Dashboard",
-            // pageFooter: "<div><p>${BUILD_NUMBER}</p></div>"
             pageFooter: 'Jeroen Ansink'
         }
     }]

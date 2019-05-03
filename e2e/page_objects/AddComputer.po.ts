@@ -16,4 +16,7 @@ export class AddComputerPage {
         this.inputIntroductionDate = element(by.id('introduced'));
         this.inputDiscontinuedDate = element(by.id('discontinued'));
     }
+    selectCompany(company): ElementFinder {
+        return element(by.cssContainingText('option', company));
+    }
 }
