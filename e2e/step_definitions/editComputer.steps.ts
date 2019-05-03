@@ -19,19 +19,23 @@ Then(/^the edit a computer screen is displayed$/, async () => {
 });
 
 When(/^the company: ([^"]*) is selected in the form$/, async company => {
-  await editcomputerpage.selectCompany(company).click();
+  if (company === '') {
+    return;
+  } else {
+    await editcomputerpage.selectCompany(company).click();
+  }
 });
 
 Then(/^the ([^"]*) is ([^"]*) in the database$/, async (computername, edited) => {
-    switch (edited) {
-      case "edited":
-        await expect(await homepage.messageComputerEdited.getText()).to.equal(
-          "Done! Computer " + computername + " has been updated"
-        );
-        break;
-      case "not edited":
-        await expect(homepage.messageComputerEdited).to.be.not.present;
-        break;
-    }
+  switch (edited) {
+    case "edited":
+      await expect(await homepage.messageComputerEdited.getText()).to.equal(
+        "Done! Computer " + computername + " has been updated"
+      );
+      break;
+    case "not edited":
+      await expect(homepage.messageComputerEdited).to.be.not.present;
+      break;
   }
+}
 );

@@ -33,7 +33,11 @@ When(/^a discontinued date: ([^"]*) is filled in the form$/, async date => {
 });
 
 When(/^a company: ([^"]*) is filled in the form$/, async company => {
-  await addcomputerpage.selectCompany(company).click();
+  if (company === '') {
+    return;
+  } else {
+    await addcomputerpage.selectCompany(company).click();
+  }
 });
 
 Then(
